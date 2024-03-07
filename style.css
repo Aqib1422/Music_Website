@@ -588,6 +588,9 @@ body {
   .tl-left {
     width: 100%;
   }
+  .lc-upper-right p {
+    display: none;
+  }
   .tl-right {
     width: 75%;
     text-align: center;
@@ -604,12 +607,12 @@ body {
     width: 100%;
   }
   .live-concerts {
-   padding: 0%;
   }
 }
 /* Live-concert-div */
 .live-concerts {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -629,30 +632,22 @@ body {
   font-size: 30px;
 }
 @media only screen and (max-width: 879px) {
- 
   .live-concerts h2 {
- 
     font-size: 30px;
   }
   .live-concerts h3 {
- 
     font-size: 20px;
   }
-   .live-concerts {
-   border-radius: 100px;
-   border: 2px rgb(195, 96, 96) solid;
-  }
-  
+ 
 }
 /* Live-concert-cards */
 .live-concerts-cards {
   color: white;
- 
+
   width: 100%;
   /* border: 1px white solid; */
   display: flex;
   flex-direction: column;
- 
 }
 .lc-card1:hover {
   background: linear-gradient(90deg, #460c3a, #0e0829, #2b0f47);
@@ -664,7 +659,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .lc-upper,
@@ -692,9 +687,10 @@ body {
   border-radius: 5px;
   color: white;
   font-size: 15px;
+  transition: all .3s;
 }
 .lc-lower-right button:hover {
-  transform: scaleY(10);
+  transform: translateY(-5px);
 }
 .lc-mic {
   background-color: #d61361;
@@ -714,10 +710,141 @@ body {
   font-size: 24px;
 }
 @media only screen and (max-width: 879px) {
- 
   .live-concerts {
-  padding: 1rem 0rem;
-  border-radius: 100px;
-  
+    padding: 1rem 0rem;
+    border-radius: 100px;
   }
+}
+.images-div
+{
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 2rem;
+}
+.idimg
+{
+  width: 20%;
+
+  transition: all .2s;
+}
+.idimg:hover
+{
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 879px) {
+  .images-div
+  {
+  
+    width: 100%;
+    padding: 0%;
+  }
+}
+.news-up-div
+{
+  /* border: 2px white solid; */
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.np-middle-div
+{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.np-upperdiv
+
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.np-u-rightdiv button
+{
+  background-color: #198754;
+  padding: .8rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition:  all.3s;
+}
+.np-u-rightdiv button:hover
+{
+  transform: translateY(-5px);
+}
+.np-u-leftdiv h3
+{
+font-size: 26px;
+font-weight: normal;
+}
+.np-u-leftdiv h2
+{
+font-size: 37px;
+font-weight: normal;
+}
+
+.up-md1
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.up-md1 p
+{
+  font-size: 28px;
+}
+.up-md1 h3
+
+{
+  font-weight: normal;
+  font-size: 15px;
+  color: #460C39;
+}
+@media only screen and (max-width: 879px) {
+  .news-up-div
+  {
+    width: 95%;
+    padding: 1rem 0rem;
+    margin:auto
+  }
+  .np-middle-div
+  {
+   
+    text-align: center;
+    flex-direction: column;
+  }
+  .np-upperdiv
+  {
+    gap: 1rem;
+  flex-direction: column;
+  }
+  .np-upperdiv h3,h2
+  {
+    text-align: center;
+    
+  }
+  .np-upperdiv h2
+  {
+    font-size: 20px;
+    
+  }
+  .np-u-rightdiv button
+  {
+    padding: .7rem;
+  }
+  .np-u-leftdiv{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+  }
+
 }
